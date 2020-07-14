@@ -1,0 +1,10 @@
+www
+build
+coverage
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# environment variables file
+.env
