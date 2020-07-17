@@ -1,3 +1,3 @@
-import Heading from "./Heading/Heading";
+import Heading from "./Heading";
 
 export { Heading };

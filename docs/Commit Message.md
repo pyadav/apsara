@@ -1,12 +1,11 @@
 # How to write a commit message
 
-- Subject line less than or equal to 72 characters in length
-- Body line length limited to 80 characters
-- Use sentence case for commit subject line with no period
-- Use present tense imperative for the subject line and
-present tense for body text
-- Use the footer to reference related issues
-
+-   Subject line less than or equal to 72 characters in length
+-   Body line length limited to 80 characters
+-   Use sentence case for commit subject line with no period
+-   Use present tense imperative for the subject line and
+    present tense for body text
+-   Use the footer to reference related issues
 
 # Example commit message
 
@@ -38,7 +37,7 @@ To set these rulers, just add the following to the VSCode global settings.json f
 }
 ```
 
-
 # Resources
-- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- [commitlint] https://commitlint.js.org/#/
+
+-   [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+-   [commitlint] https://commitlint.js.org/#/
