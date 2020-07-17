@@ -63,3 +63,6 @@ The instance of Storybook housed in this project is additionally preconfigured w
 * Better UX (elements positioning, library version displaying, better elements hierarchy handling)
 * `info` plugin - every component gets automatically created documentation page with props info etc. You can also include your own README
 * `knobs` plugin - lets you easily configure the component before injecting it into your application
+
+### Resources
+- [learn storybook](https://www.learnstorybook.com/)

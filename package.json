@@ -16,7 +16,7 @@
     "test:watch": "jest --watch",
     "jest:cache": "jest --clearCache",
     "jest:coverage": "jest --coverage",
-    "lint": "eslint . --ext .js,.ts,.tsx --quiet --fix",
+    "lint": "eslint src --ext .js,.ts,.tsx --quiet --fix",
     "generate": "node ./utils/create-component",
     "prepublishOnly": "npm run build"
   },
