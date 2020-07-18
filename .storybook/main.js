@@ -13,7 +13,7 @@ configuration files -
 
 module.exports = {
     // location of story files
-    stories: ["../src/**/*.stories.(tsx|jsx|mdx)"],
+    stories: ["../src/stories/*.stories.(tsx|jsx|mdx)", "../src/**/*.stories.(tsx|jsx|mdx)"],
 
     // Add any Storybook addons you want here: https://storybook.js.org/addons/
     addons: [
@@ -51,10 +51,18 @@ module.exports = {
 
         config.module.rules.push({
             test: /\.(ts|tsx)$/,
-            loader: require.resolve("babel-loader"),
-            options: {
-                presets: [["react-app", { flow: false, typescript: true }]],
-            },
+            use: [
+                {
+                    loader: require.resolve("babel-loader"),
+                    options: {
+                        presets: [["react-app", { flow: false, typescript: true }]],
+                    },
+                },
+                // Automatics props for typescript
+                {
+                    loader: require.resolve("react-docgen-typescript-loader"),
+                },
+            ],
         });
         config.resolve.extensions.push(".ts", ".tsx");
 

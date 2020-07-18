@@ -34,8 +34,8 @@ export default {
     ],
     plugins: [
         postcss({
-            extract: true,
             sourceMap: true,
+            extract: "apsara.css",
             use: [["less", { javascriptEnabled: true }]],
             loaders: [
                 rollupPostcssLessLoader({
