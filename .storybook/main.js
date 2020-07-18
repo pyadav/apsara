@@ -13,10 +13,18 @@ configuration files -
 
 module.exports = {
     // location of story files
-    stories: ["../src/**/*.stories.tsx"],
+    stories: ["../src/**/*.stories.(tsx|jsx|mdx)"],
 
     // Add any Storybook addons you want here: https://storybook.js.org/addons/
-    addons: [],
+    addons: [
+        "@storybook/addon-links",
+        {
+            name: "@storybook/addon-docs",
+            options: {
+                configureJSX: true,
+            },
+        },
+    ],
     webpackFinal: async (config) => {
         config.module.rules.push({
             test: /\.scss$/,
@@ -26,7 +34,18 @@ module.exports = {
 
         config.module.rules.push({
             test: /\.less$/,
-            use: ["style-loader", "css-loader", "less-loader"],
+            use: [
+                "style-loader",
+                "css-loader",
+                {
+                    loader: "less-loader",
+                    options: {
+                        lessOptions: {
+                            javascriptEnabled: true,
+                        },
+                    },
+                },
+            ],
             include: path.resolve(__dirname, "../"),
         });
 

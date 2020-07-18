@@ -1,0 +1,19 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+        apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+div.flex-container {
+    display: flex;
+    &.padding-between {
+        & > * {
+            margin-right: 15px;
+        }
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}

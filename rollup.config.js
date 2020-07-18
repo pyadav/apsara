@@ -1,9 +1,11 @@
+import path from "path";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import commonjs from "@rollup/plugin-commonjs";
 import image from "@rollup/plugin-image";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
+import rollupPostcssLessLoader from "rollup-plugin-postcss-webpack-alias-less-loader";
 
 const packageJson = require("./package.json");
 
@@ -34,6 +36,16 @@ export default {
         postcss({
             extract: true,
             sourceMap: true,
+            use: [["less", { javascriptEnabled: true }]],
+            loaders: [
+                rollupPostcssLessLoader({
+                    nodeModulePath: path.resolve(__dirname, "./node_modules"),
+                    aliases: {},
+                    options: {
+                        javascriptEnabled: true,
+                    },
+                }),
+            ],
         }),
         // Prevents Rollup from bundling the peer dependencies
         peerDepsExternal(),

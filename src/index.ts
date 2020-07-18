@@ -1,3 +1,1 @@
-import Heading from "./Heading";
-
-export { Heading };
+export { default as Button } from "./Button";

@@ -1,0 +1,224 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import Button from "./index";
+import { SearchOutlined } from "@ant-design/icons";
+
+<Meta title="Components/Buttons" component={Button} />
+
+# Button
+
+[**antd/button**](https://ant.design/components/button/).
+
+## Overview
+
+<Preview>
+    <div className="flex-container padding-between">
+        <Button type="primary">Primary</Button>
+        <Button type="primary" ghost>
+            Ghost
+        </Button>
+        <Button type="default">Default</Button>
+        <Button type="default" border={false}>
+            No border
+        </Button>
+        <Button type="dashed">Dashed</Button>
+        <Button type="link">Link</Button>
+    </div>
+</Preview>
+
+## Small
+
+<Preview>
+    <div className="flex-container padding-between">
+        <Button type="primary" size="small">
+            Primary
+        </Button>
+        <Button type="primary" ghost size="small">
+            Ghost
+        </Button>
+        <Button type="default" size="small">
+            Default
+        </Button>
+        <Button type="default" border={false} size="small">
+            No border
+        </Button>
+        <Button type="dashed" size="small">
+            Dashed
+        </Button>
+        <Button type="link" size="small">
+            Link
+        </Button>
+    </div>
+</Preview>
+
+### Dangers
+
+<Preview>
+    <div className="flex-container padding-between">
+        <Button type="primary" danger>
+            Primary
+        </Button>
+        <Button type="primary" ghost danger>
+            Ghost
+        </Button>
+        <Button type="default" danger>
+            Default
+        </Button>
+        <Button type="default" danger border={false}>
+            No border
+        </Button>
+        <Button type="dashed" danger>
+            Dashed
+        </Button>
+        <Button type="link" danger>
+            Link
+        </Button>
+    </div>
+</Preview>
+
+## Рrimary
+
+<Preview>
+    <Story name="Primary">
+        <Button type="primary">Primary</Button>
+    </Story>
+</Preview>
+
+### Small
+
+<Preview>
+    <Button type="primary" size="small">
+        Primary
+    </Button>
+</Preview>
+
+### Disabled
+
+<Preview>
+    <Button type="primary" disabled>
+        Primary
+    </Button>
+</Preview>
+
+### Loading
+
+<Preview>
+    <Button type="primary" loading>
+        Primary
+    </Button>
+</Preview>
+
+### Block
+
+<Preview>
+    <Button type="primary" block>
+        Primary
+    </Button>
+</Preview>
+
+## Default button
+
+<Preview>
+    <Story name="Default">
+        <Button type="default">Default</Button>
+    </Story>
+</Preview>
+
+### Disabled
+
+<Preview>
+    <Button type="default" disabled>
+        Default
+    </Button>
+</Preview>
+
+### No border
+
+<Preview>
+    <Button type="default" border={false}>
+        Default
+    </Button>
+</Preview>
+
+### Loading
+
+<Preview>
+    <Button type="default" loading>
+        Default
+    </Button>
+</Preview>
+
+## Dashed button
+
+<Preview>
+    <Story name="Dashed">
+        <Button type="dashed">Dashed</Button>
+    </Story>
+</Preview>
+
+### Disabled
+
+<Preview>
+    <Button type="dashed" disabled>
+        Dashed
+    </Button>
+</Preview>
+
+### Loading
+
+<Preview>
+    <Button type="dashed" loading>
+        Dashed
+    </Button>
+</Preview>
+
+## Link button
+
+<Preview>
+    <Story name="Link">
+        <Button type="link">Link</Button>
+    </Story>
+</Preview>
+
+### Disabled
+
+<Preview>
+    <Button type="link" disabled>
+        Link
+    </Button>
+</Preview>
+
+### Loading
+
+<Preview>
+    <Button type="link" loading>
+        Link
+    </Button>
+</Preview>
+
+## With Icon
+
+<Preview>
+    <Story name="With Icon">
+        <div className="flex-container padding-between">
+            <Button type="primary" icon={<SearchOutlined />}>
+                Primary
+            </Button>
+            <Button type="primary" icon={<SearchOutlined />} shape="circle" />
+        </div>
+    </Story>
+</Preview>
+
+### Default
+
+<Preview>
+    <div className="flex-container padding-between">
+        <Button type="default" icon={<SearchOutlined />}>
+            Default
+        </Button>
+        <Button type="default" icon={<SearchOutlined />} shape="circle" />
+    </div>
+</Preview>
+
+## Props
+
+-   [**antd/button**](https://ant.design/components/button/#API)
