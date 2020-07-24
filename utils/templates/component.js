@@ -4,7 +4,7 @@ module.exports = (componentName) => ({
           import { ${componentName}Props } from "./${componentName}.types";
           import { Styled${componentName} } from  "./${componentName}.styles";
           const ${componentName}: React.FC<${componentName}Props> = ({ foo }: ${componentName}Props) => (
-              <Styled${componentName} data-testid="${componentName}" className="foo-bar">{foo}</div>
+              <Styled${componentName} data-testid="${componentName}" className="foo-bar">{foo}</Styled${componentName}>
           );
           export default ${componentName};
       `,
