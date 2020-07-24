@@ -21,6 +21,11 @@
         "generate": "node ./utils/create-component",
         "prepublishOnly": "npm run build"
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint"
+        }
+    },
     "peerDependencies": {
         "antd": "^4.4.2",
         "react": ">=16.13.1",
