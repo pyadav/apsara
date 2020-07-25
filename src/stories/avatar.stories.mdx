@@ -1,0 +1,41 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Menu, Avatar } from "../antd";
+import { menuItems } from "../constants";
+import { DownOutlined } from "@ant-design/icons";
+
+<Meta title="Data Display/Avatar " component={Avatar} />
+
+# Avatar
+
+[**antd/avatar**](https://ant.design/components/avatar/).
+
+### Overview
+
+<Preview>
+    <div>
+        <div className="flex-container">
+            <div className="apsara-card-head">
+                <div class="apsara-card-head-title">Basic</div>
+            </div>
+            <div className="apsara-card-body">
+                <Dropdown overlay={menuItems}>
+                    <Avatar size={64} icon={<UserOutlined />} />
+                    <Avatar size="large" icon={<UserOutlined />} />
+                    <Avatar icon={<UserOutlined />} />
+                    <Avatar size="small" icon={<UserOutlined />} />
+                </Dropdown>
+            </div>
+        </div>
+        <div className="flex-container">
+            <div className="apsara-card-head">
+                <div class="apsara-card-head-title">Basic square</div>
+            </div>
+            <div className="apsara-card-body">
+                <Avatar shape="square" size={64} icon={<UserOutlined />} />
+                <Avatar shape="square" size="large" icon={<UserOutlined />} />
+                <Avatar shape="square" icon={<UserOutlined />} />
+                <Avatar shape="square" size="small" icon={<UserOutlined />} />
+            </div>
+        </div>
+    </div>
+</Preview>

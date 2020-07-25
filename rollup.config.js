@@ -5,6 +5,7 @@ import image from "@rollup/plugin-image";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
+import copy from "rollup-plugin-copy";
 import rollupPostcssLessLoader from "rollup-plugin-postcss-webpack-alias-less-loader";
 
 const packageJson = require("./package.json");
@@ -63,5 +64,10 @@ export default {
         // Transpiles our TypeScript code into JavaScript
         typescript({ useTsconfigDeclarationDir: true }),
         image(),
+
+        // copy fonts
+        copy({
+            targets: [{ src: "src/styles/fonts/**/*", dest: "build/fonts" }],
+        }),
     ],
 };

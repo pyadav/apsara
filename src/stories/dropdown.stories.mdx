@@ -1,0 +1,29 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Menu, Dropdown } from "../antd";
+import { menuItems } from "../constants";
+import { DownOutlined } from "@ant-design/icons";
+
+<Meta title="Data Entry/Dropdown" component={Dropdown} />
+
+# Dropdown
+
+[**antd/dropdown**](https://ant.design/components/dropdown/).
+
+### Overview
+
+<Preview>
+    <div>
+        <div className="flex-container">
+            <div className="apsara-card-head">
+                <div class="apsara-card-head-title">Overview</div>
+            </div>
+            <div className="apsara-card-body">
+                <Dropdown overlay={menuItems}>
+                    <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
+                        Hover me <DownOutlined />
+                    </a>
+                </Dropdown>
+            </div>
+        </div>
+    </div>
+</Preview>

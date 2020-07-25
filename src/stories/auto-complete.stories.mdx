@@ -1,0 +1,32 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Menu, Input, AutoComplete } from "../antd";
+import { menuItems } from "../constants";
+import { DownOutlined } from "@ant-design/icons";
+
+<Meta title="Data Entry/AutoComplete" component={AutoComplete} />
+
+# AutoComplete
+
+[**antd/AutoComplete**](https://ant.design/components/auto-complete/).
+
+### Overview
+
+<Preview>
+    <div>
+        <div className="flex-container">
+            <div className="apsara-card-head">
+                <div class="apsara-card-head-title">NON CASESENSITIVE AUTOCOMPLETE</div>
+            </div>
+            <div className="apsara-card-body">
+                <AutoComplete
+                    options={[{ value: "Burns Bay Road" }, { value: "Downing Street" }, { value: "Wall Street" }]}
+                    style={{ width: 200 }}
+                    filterOption={(inputValue, option) =>
+                        option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
+                    }
+                    placeholder="try to type `b`"
+                />
+            </div>
+        </div>
+    </div>
+</Preview>
