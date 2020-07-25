@@ -46,18 +46,24 @@ code {
     }
 }
 
-.sbdocs.sbdocs-preview {
-    border: none;
-    margin-bottom: 32px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 5px 5px;
-    position: relative;
-    border-radius: 10px;
-}
 .sbdocs {
     .sbdocs-a,
     .sbdocs-span {
         font-family: "Fira Sans" !important;
         font-size: 14px;
     }
+
+    .sbdocs-preview {
+        border: none;
+        margin-bottom: 32px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 5px 5px;
+        position: relative;
+        border-radius: 10px;
+    }
+}
+.sbdocs-preview *,
+.sbdocs-preview *::before,
+.sbdocs-preview *::after {
+    box-sizing: border-box;
 }

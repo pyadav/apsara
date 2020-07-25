@@ -1,13 +1,31 @@
-# Apsara
+<div align="center">
+  <h1>Apsara</h1>
+  <br><br>
+   Welcome to Apsara Design System 👋
+  <br>
+</div>
+<h4 align="center">A awesome design system for your products and experiences!</h4>
+<p align="center">
+  <a href="#fire-overview">Overview</a> •
+  <a href="#usage">Getting Started</a> •
+  <a href="#generating-new-components">Generating new components</a> •
+  <a href="#resources">Resources</a>
+</p>
 
-**A Design System for Testimonial project**
+## :fire: Overview
 
-This project contains a combination of:
+We use of the best tools to improve the workflow to allow you to create an awesome library of components!
 
--   [Storybook](https://storybook.js.org) - The UI environment for developing React components
--   [Jest](https://jestjs.io/) and [React Testing Library](https://github.com/testing-library/react-testing-library) enabling testing of the components
--   [Rollup](https://rollupjs.org) - Module bundler that bundles and transpile the components.
+-   [ReactJs](https://facebook.github.io/react/) v16
 -   [TypeScript](https://www.typescriptlang.org/) - Used to transpile code into javascript
+-   [Rollup](https://rollupjs.org) - Module bundler that bundles and transpile the components.
+-   [Antd Design](https://ant.design/https://ant.design/) for base components
+-   Compiled of modern JavaScript with [Babel](https://github.com/babel/babel) and bundle with [Webpack](https://webpack.js.org/)
+-   [Jest](https://jestjs.io/) and [Testing library](https://testing-library.com/) for unit/ui testing
+-   Automate Git hooks with [Husky](https://github.com/typicode/husky)
+-   Code linting using [Eslint](https://github.com/eslint/eslint)
+-   Code formatter using [Prettier](https://prettier.io/)
+-   Developing isolated UI components with [Storybook](https://storybook.js.org/)
 
 ### What does it do?
 
