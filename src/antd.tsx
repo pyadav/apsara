@@ -15,4 +15,8 @@ export {
     Card,
     Col,
     Row,
+    Tabs,
+    Form,
+    Grid,
+    Checkbox,
 } from "antd";
